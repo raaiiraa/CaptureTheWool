@@ -1,13 +1,17 @@
 package com.gmail.lynx7478.ctw.announcementbar.versions.v1_21_R1;
 
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.protocol.game.ClientboundSystemChatPacket;
-import org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer;
+
 import org.bukkit.entity.Player;
 
 public class Bar implements com.gmail.lynx7478.ctw.announcementbar.Bar
 {
-    @Override
+
+	@Override
+	public void sendToPlayer(Player player, String message, float percentOfTotal) 
+	{
+		
+	}
+    /* @Override
     public void sendToPlayer(final Player player, final String message, final float percentOfTotal)
     {
         Component actionComponent = Component.Serializer.fromJson("{\"text\":\"" + cleanMessage(message) + "\"}", null);
@@ -21,5 +25,7 @@ public class Bar implements com.gmail.lynx7478.ctw.announcementbar.Bar
             message = message.substring(0, 63);
 
         return message;
-    }
+    } */
+	
+	//TODO: Fix
 }

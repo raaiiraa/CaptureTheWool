@@ -66,11 +66,10 @@ public class Game {
 						// mapWorld.setGameRuleValue("doMobSpawning", "false");
 						// mapWorld.setGameRuleValue("doFireTick", "false");
 
-						mapWorld.setGameRule(GameRule.DO_MOB_SPAWNING, false);
-						mapWorld.setGameRule(GameRule.DO_FIRE_TICK, false);
+						mapWorld.setGameRule(GameRule.SPAWN_MOBS, false);
 						if(GameVars.getAutoRespawn())
 						{
-							mapWorld.setGameRule(GameRule.DO_IMMEDIATE_RESPAWN, true);
+							mapWorld.setGameRule(GameRule.IMMEDIATE_RESPAWN, true);
 						}
 						//TODO: Test message.
 						Bukkit.broadcastMessage("returned map");
